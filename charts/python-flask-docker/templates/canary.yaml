@@ -40,5 +40,9 @@ spec:
     metrics:
 {{ toYaml .Values.canary.canaryAnalysis.metrics | indent 4 }}
 {{- end }}
+{{- if .Values.canary.canaryAnalysis.webhooks }}
+    webhooks:
+{{ toYaml .Values.canary.canaryAnalysis.webhooks | indent 4 }}
+{{- end }}
 {{- end }}
 {{- end }}
