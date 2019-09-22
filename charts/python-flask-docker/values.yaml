@@ -45,7 +45,7 @@ canary:
   service:
     # Istio virtual service host names
     hosts:
-    - production.34.85.121.135.nip.io
+    - production.35.187.203.196.nip.io
     gateways:
     - jx-gateway.istio-system.svc.cluster.local
   canaryAnalysis:
@@ -70,10 +70,10 @@ canary:
       # milliseconds
       threshold: 500
       interval: 60s
-    webhooks:
-    - name: "load test"
-      type: rollout
-      url: http://flagger-loadtester.test/
-      timeout: 15s
-      metadata:
-        cmd: "hey -z 1m -q 5 -c 2 http://production.34.85.121.135.nip.io"
+#    webhooks:
+#    - name: "load test"
+#      type: rollout
+#      url: http://flagger-loadtester.test/
+#      timeout: 15s
+#      metadata:
+#        cmd: "hey -z 1m -q 5 -c 2 http://production.34.85.121.135.nip.io"
