@@ -2,7 +2,7 @@ apiVersion: skaffold/v1beta2
 kind: Config
 build:
   artifacts:
-  - image: some-unique-id6/python-flask-docker
+  - image: oscar3332000/python-flask-docker
     context: .
     docker: {}
   tagPolicy:

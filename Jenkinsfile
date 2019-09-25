@@ -6,7 +6,7 @@ pipeline {
     ORG = 'oscar3332000'
     APP_NAME = 'python-flask-docker'
     CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
-    DOCKER_REGISTRY_ORG = 'some-unique-id6'
+    DOCKER_REGISTRY_ORG = 'oscar3332000'
   }
   stages {
     stage('CI Build and push snapshot') {
