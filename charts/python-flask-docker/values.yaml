@@ -45,7 +45,7 @@ canary:
   enable: true
   service:
     hosts:
-    - production.34.84.20.251.nip.io
+    - production.34.84.57.36.nip.io
     gateways:
     - jx-gateway.istio-system.svc.cluster.local
   canaryAnalysis:
