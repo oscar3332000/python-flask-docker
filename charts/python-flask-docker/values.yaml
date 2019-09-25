@@ -47,7 +47,7 @@ canary:
     hosts:
     - production.34.84.57.36.nip.io
     gateways:
-    - jx-gateway.istio-system.svc.cluster.local
+    - public-gateway.istio-system.svc.cluster.local
   canaryAnalysis:
     interval: 60s
     threshold: 5
@@ -70,4 +70,4 @@ canary:
       timeout: 5s
       metadata:
        type: cmd
-       cmd: "hey -z 1m -q 10 -c 2 http://python-flask-docker-canary.jx-production/"
+       cmd: "hey -z 1m -q 10 -c 2 http://jx-python-flask-docker.jx-production.svc.cluster.local:8080"
